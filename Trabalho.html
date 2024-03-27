@@ -163,18 +163,29 @@
                           
                         </div>
                          
-                        <button type="submit" href="listarConsultas.php">ENVIAR</button>
-                    
+                      <!---  <button type="submit" href="listarConsultas.php">ENVIAR</button> -->
+                           <form action="Trabalho.html" method="post">
+                            
+                            <button type="submit" id="submit-btn">ENVIAR</button>
+                        </form>
+                        
+                        <script>
+                           
+                            document.getElementById("submit-btn").addEventListener("click", function(event) {
+                                
+                                event.preventDefault();
+                                
+                                
+                                alert("Consulta agendada com sucesso!");
+                                
+                               
+                                document.querySelector("form").submit();
+                            });
+                        </script>
+                        
                       </form>
                      </div>
                       </form>
-                      <script>
-                        // Adiciona um evento de clique ao botão de envio
-                        document.getElementById("submit").addEventListener("Enviar", function() {
-                            // Exibe o popup
-                            alert("Consulta agendada com sucesso!");
-                        });
-                    </script>
                      </section>
                      <!--sessão sobre-->
                      <section class="Sobre" id="Sobre">
