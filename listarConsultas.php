@@ -44,7 +44,6 @@ if ($result->num_rows > 0) {
     }
 </style>";
   while($row = $result->fetch_assoc()) {
-
        echo "<tr>";
        echo "<td>". $row["nome"] ."</td>";
        echo "<td>". $row["email"] ."</td>";
