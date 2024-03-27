@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
-
-    <title>Trabalho Facudade Landing-Page</title>
+    
+ <title>Trabalho Facudade Landing-Page</title>
 </head>
 <body> <!--navegação-->
     <div class="caixa-principal" id="home">
@@ -36,7 +41,7 @@
                 <button>Agendar Consutas</button>
             </div>
             <div class="area_direita">
-                <img src="./img/images/imagem1.png">
+                <img src="./img/images/imagem1.png" title="foto">
             </div>
             <div class="area_serviços">
                 <p>Our Services</p>
@@ -49,7 +54,7 @@
                 <div class="card_remedio">
                     <div class="card">
                         <div class="card_img">
-                            <img src="./img/images/busca.png">
+                            <img src="./img/images/busca.png" title="foto">
                         </div>
                         <div class="card_titulo">
                             <span>Pesquisar Medicos</span>
@@ -61,7 +66,7 @@
                     
                         <div class="card">
                             <div class="card_img">
-                                <img src="./img/images/frasco.png">
+                                <img src="./img/images/frasco.png" title="foto">
                             </div>
                             <div class="card_titulo">teste</div>
                             <div class="card_texto">teste</div>
@@ -69,7 +74,7 @@
 
                         <div class="card">
                             <div class="card_img">
-                                <img src="./img/images/consulta.png">
+                                <img src="./img/images/consulta.png" title="foto">
                             </div>
                             <div class="card_titulo">teste</div>
                             <div class="card_texto">teste</div>
@@ -81,7 +86,7 @@
                        <div class="card_remedio">
                         <div class="card">
                             <div class="card_img">
-                                <img src="./img/images/ficha.png">
+                                <img src="./img/images/ficha.png" title="foto">
                             </div>
                             <div class="card_titulo">
                                 <span>Pesquisar Medicos</span>
@@ -93,7 +98,7 @@
                         
                             <div class="card">
                                 <div class="card_img">
-                                    <img src="./img/images/remedio.png">
+                                    <img src="./img/images/remedio.png" title="foto">
                                 </div>
                                 <div class="card_titulo">teste</div>
                                 <div class="card_texto">teste</div>
@@ -101,7 +106,7 @@
     
                             <div class="card">
                                 <div class="card_img">
-                                    <img src="./img/images/documento.png">
+                                    <img src="./img/images/documento.png" title="foto">
                                 </div>
                                 <div class="card_titulo">teste</div>
                                 <div class="card_texto">teste</div>
@@ -110,29 +115,31 @@
                      <!--terceira sessão Cadastro -->
 
                      <section class="Cadastro" id="Cadastro">
-                      <form action="">
+
+                      <form action="Trabalho.php" method="POST">
+
                         <div class="input_div">
                             <div class="input_control">
-                                <label for="name">Nome</label>
-                                <input type="text" nome="name" id="name">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" title="nome">
                             </div>
                                 <div class="input_control">
-                                <label for="name">CPF</label>
-                                <input type="text" nome="cpf" id="cpf">
+                                <label for="cpf">CPF</label>
+                                <input type="cpf" id="cpf" name="cpf" title="cpf">
                             </div>
                         </div>
 
 
                         <div class="input_div">
                             <div class="input_control">
-                                <label for="name">E-mail</label>
-                                <input type="text" nome="E-mail" id="E-mail">
+                                <label for="email">email</label>
+                                <input type="email" id="email" name="email" title="email">
                             </div>
                             
 
                             <div class="input_control">
-                                <label for="name">Telefone</label>
-                                <input type="text" nome="telefone" id="telefone">
+                                <label for="telefone">Telefone</label>
+                                <input type="telefone" id="telefone" name="telefone" title="telefone">
                             </div>
                          </div>
 
@@ -141,20 +148,33 @@
 
                          <div class="input_div">
                             <div class="input_control">
-                                <label for="name">Data</label>
-                                <input type="text" nome="data" id="data">
+                                <label for="data">Data</label>
+                                <input type="data" id="data" name="data" title="data">
                             </div>
                             
 
                             <div class="input_control">
-                                <label for="name">Horario</label>
-                                <input type="text" nome="horario" id="horario">
+                                <label for="endereco">Endereço</label>
+                                <input type="endereco" id="endereco" name="endereco" title="endereço">
                             </div>
                          </div>
-                         <button>Enviar</button>
+
+                         <div>
+                          
+                        </div>
+                         
+                        <button type="submit" href="listarConsultas.php">ENVIAR</button>
+                    
                       </form>
                      </div>
                       </form>
+                      <script>
+                        // Adiciona um evento de clique ao botão de envio
+                        document.getElementById("submit").addEventListener("click", function() {
+                            // Exibe o popup
+                            alert("Consulta agendada com sucesso!");
+                        });
+                    </script>
                      </section>
                      <!--sessão sobre-->
                      <section class="Sobre" id="Sobre">
@@ -171,7 +191,7 @@
                         </div>
                         <div class="Image_Esquerda">
                             <div class="esquerda_image">
-                                <img src="./img/images/imagem2.png">
+                                <img src="./img/images/imagem2.png" title="foto">
                             </div>
                         </div>
                       </section>
@@ -207,7 +227,7 @@
 
                         </div>
 
-                        
+                        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
                       </footer>
                      </div>
                     </div>
