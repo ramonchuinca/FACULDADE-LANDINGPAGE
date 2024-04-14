@@ -22,7 +22,7 @@ $stmt->store_result();
 $stmt->close();
 
 //if($stmt->rowCount() > 0){
-    header("location:./trabalho.html");
+    header("location:./index.html");
 //}
 //else{
     //echo"Erro ao tentar adicionar usuario";
