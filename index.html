@@ -7,106 +7,138 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
  <title>Trabalho Facudade Landing-Page</title>
 </head>
-<body> <!--navegação-->
-    <div class="caixa-principal" id="home">
-        <nav>
-          <h2 class="Trafalgar">Trafalgar</h2>
-          <ul>
-            <li><a class="link-menu" href="#Home">Home</a></li>
-            <li><a class="link-menu" href="#Remedios">Remedios</a></li>
-            <li><a class="link-menu" href="#Cadastro">Cadastro</a></li>
-            <li><a class="link-menu" href="#Sobre">Sobre</a></li>
-            <li><a class="link-menu" href="#Quem Somos">Quem Somos</a></li>
-          </ul>
+<body> 
+    <!--navegação-->
+    <div class="container-fluid caixa-principal" id="home">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <h2 class="navbar-brand Trafalgar">Trafalgar</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link link-menu" href="#Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="#Remedios">Remedios</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="#Cadastro">Cadastro</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="#Sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="#Quem Somos">Quem Somos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <!--parte do texto-->
-        <div class="trafalgar">
-            <div class="area_titulo">
-                <h1>Virtual healthcare<br>for you</h1>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="trafalgar">
+                    <div class="area_titulo">
+                        <h1 class="text-md-start">Virtual healthcare<br>for you</h1>
+                    </div>
+                    <div class="area_texto">
+                        <p class="text-md-start">Trafalgar provides progressive, and affordable<br>
+                        healthcare, accessible on mobile and online<br>
+                        for everyone. Consult today</p>
+                    </div>
+                    <div class="btn_area text-md-start">
+                        <button class="btn btn-primary">Agendar Consultas</button>
+                    </div>
+                    <div class="area_serviços">
+                        <p>Our Services</p>
+                    </div>
+                </div>
             </div>
-            <div class="area_texto">
-                <p>Trafalgar provides progressive, and affordable<br>
-                healthcare, accessible on mobile and online<br>
-                for everyone Consult today</p>
+            <div class="col-md-6">
+                <div class="area_direita">
+                    <img src="./img/images/imagem1.png" class="img-fluid" title="foto">
+                </div>
             </div>
-            <div class="btn_area">
-                <button>Agendar Consutas</button>
-            </div>
-            <div class="area_direita">
-                <img src="./img/images/imagem1.png" title="foto">
-            </div>
-            <div class="area_serviços">
-                <p>Our Services</p>
-            </div>
+        </div>
+    </div>
+    
 
             <!--primeira sessão dos cards-->
             <section class="Remedios" id="Remedios">
-            
-               
-                <div class="card_remedio">
-                    <div class="card">
+                <div class="container mt-5">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card custom-card">
                         <div class="card_img">
-                            <img src="./img/images/busca.png" title="foto">
+                          <img src="./img/images/busca.png" class="card-img-top" alt="Pesquisar Médicos">
                         </div>
-                        <div class="card_titulo">
-                            <span>Pesquisar Medicos</span>
+                        <div class="card-body">
+                          <h5 class="card-title">Temos os melhores Remedios</h5>
+                          <p class="card-text"></p>
                         </div>
-                        <div class="card_texto">
-                            <p>Aqui voce encontra os melhores</p>
-                        </div>
+                      </div>
                     </div>
-                    
-                        <div class="card">
-                            <div class="card_img">
-                                <img src="./img/images/frasco.png" title="foto">
-                            </div>
-                            <div class="card_titulo">teste</div>
-                            <div class="card_texto">teste</div>
+                    <div class="col-md-4">
+                      <div class="card custom-card">
+                        <div class="card_img">
+                          <img src="./img/images/frasco.png" class="card-img-top" alt="Título do Card">
                         </div>
-
-                        <div class="card">
-                            <div class="card_img">
-                                <img src="./img/images/consulta.png" title="foto">
-                            </div>
-                            <div class="card_titulo">teste</div>
-                            <div class="card_texto">teste</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Temos os melhores Remedios</h5>
+                          <p class="card-text"></p>
                         </div>
-
-                        
-                       <!--segunda sessão de cards--> 
-                       </div>
-                       <div class="card_remedio">
-                        <div class="card">
-                            <div class="card_img">
-                                <img src="./img/images/ficha.png" title="foto">
-                            </div>
-                            <div class="card_titulo">
-                                <span>Pesquisar Medicos</span>
-                            </div>
-                            <div class="card_texto">
-                                <p>Aqui voce encontra os melhores</p>
-                            </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card custom-card">
+                        <div class="card_img">
+                          <img src="./img/images/consulta.png" class="card-img-top" alt="Título do Card">
                         </div>
-                        
-                            <div class="card">
-                                <div class="card_img">
-                                    <img src="./img/images/remedio.png" title="foto">
-                                </div>
-                                <div class="card_titulo">teste</div>
-                                <div class="card_texto">teste</div>
-                            </div>
-    
-                            <div class="card">
-                                <div class="card_img">
-                                    <img src="./img/images/documento.png" title="foto">
-                                </div>
-                                <div class="card_titulo">teste</div>
-                                <div class="card_texto">teste</div>
-                            </div>
-                     </section>
+                        <div class="card-body">
+                          <h5 class="card-title">Temos os melhores Remedios</h5>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Segunda sessão de cards -->
+                  <div class="row mt-4">
+                    <div class="col-md-4">
+                      <div class="card custom-card">
+                        <div class="card_img">
+                          <img src="./img/images/ficha.png" class="card-img-top" alt="Pesquisar Médicos">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Temos os melhores Remedios</h5>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card custom-card">
+                        <div class="card_img">
+                          <img src="./img/images/remedio.png" class="card-img-top" alt="Título do Card">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Temos os melhores Remedios</h5>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card custom-card">
+                        <div class="card_img">
+                          <img src="./img/images/documento.png" class="card-img-top" alt="Título do Card">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Temos os melhores Remedios</h5>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              
                      <!--terceira sessão Cadastro -->
 
                      <section class="Cadastro" id="Cadastro">
@@ -184,57 +216,69 @@
                      </section>
                      <!--sessão sobre-->
                      <section class="Sobre" id="Sobre">
-                        <div class="Palavras">
-                            <h1>Principais provedores</h1>
-
-
-                            <p>Trafalgar oferece cuidados de saude progressivos e <br>
-                                acessiveis em dispositivos moveis e online para <br>
-                                todos.Para nós não e apenas trabalho.Temos orgulho<br>
-                                das solucões que entregamos 
-                            </p>
-                            <button>Saber mais</button>
-                        </div>
-                        <div class="Image_Esquerda">
-                            <div class="esquerda_image">
-                                <img src="./img/images/imagem2.png" title="foto">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="Palavras">
+                                        <h1 class="text-md-end">Principais Clínicas de Saúde</h1>
+                                        <p class="text-md-end">Trafalgar oferece cuidados de saúde progressivos e acessíveis em dispositivos móveis e online para todos. Para nós, não é apenas trabalho. Temos orgulho das soluções que entregamos.</p>
+                                        <button class="btn btn-primary float-md-end">Saber mais</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="Image_Esquerda text-center">
+                                        <img src="./img/images/imagem2.png" class="img-fluid" alt="foto">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                      </section>
-                      <footer class="Quem_Somos" id="Quem Somos">
-                        <div class="footer_titulo">
-                            <h1>Trafalgar</h1>
+                    </section>
+                    
+                      <footer class="Quem_Somos" id="Quem_Somos">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="footer_titulo">
+                                        <h1>Trafalgar</h1>
+                                    </div>
+                                    <div class="footer_texto">
+                                        <p>provides progressive and affordable<br><br>
+                                            healthcare accessible on mobile and online<br><br>
+                                            for everyone
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="footer_company">
+                                        <h1>Company</h1>
+                                    </div>
+                                    <div class="texto_company">
+                                        <p>About<br><br>testimonia<br><br>find a doctor<br><br>Apps</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="footer_Region">
+                                        <h1>Region</h1>
+                                    </div>
+                                    <div class="texto_Region">
+                                        <p>indonesia<br><br>singapore<br><br>hongkong<br><br>canada</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="footer_Help">
+                                        <h1>Help</h1>
+                                    </div>
+                                    <div class="texto_help">
+                                        <p>helpcenter<br><br>contact support<br><br>instructions<br><br>howit works</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="footer_texto">
-                            <p>provides progressive and affordable<br><br>
-                                healthcare accessible on mobile and online<br><br>
-                                for everyone
-                            </p>
-                        </div>
-                        <div class="footer_company">
-                            <h1>Company</h1>
-                        </div>
-                        <div class="texto_company">
-                            <p>About<br><br>testimonia<br><br>find a doctor<br><br>Apps</p>
-                        </div>
-
-                        <div class="footer_Region">
-                            <h1>Region</h1>
-                        </div>
-                        <div class="texto_Region">
-                            <p>indonesia<br><br>singapore<br><br>hongkong<br><br>canada</p>
-                        </div>
-
-                        <div class="footer_Help">
-                            <h1>Help</h1>
-                        </div>
-                        <div class="texto_help">
-                            <p>helpcenter<br><br>contact support<br><br>instructions<br><br>howit works</p>
-
-                        </div>
-
                         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
-                      </footer>
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+                                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+                                crossorigin="anonymous"></script>
+                    </footer>
                      </div>
                     </div>
                 </body>

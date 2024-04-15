@@ -6,102 +6,58 @@
 }
 
 .caixa-principal {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-color:#fff;
-    
-    
+    background-color: black;
+    padding: 50px 0;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 25px;
+.Trafalgar {
+    color: red;
 }
 
-li {
-    
-    list-style: none;
-    display: inline-block;
-    font-size: 25px;
-    margin-right: 30px;
-    cursor: pointer;
+.navbar-nav .nav-link {
+    color: wheat;
+    font-size:25px;
 }
 
-a {
-    display: flex;
+.navbar-nav .nav-link:hover {
+    color: white;
 }
 
-
-.link-menu:hover {
-    color: black;
-    transition: 0.5s;
+.trafalgar {
+    margin-top: 150px;
 }
 
-.link-menu {
-    text-decoration: none;
-    color: #ccc;
-    
-
-}
-
-.trafalgar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 70px;
-    width: 100%;
-    margin-top: 50px;
-    flex: 1;
-}
-.area_titulo{
+.area_titulo {
     font-size: 25px;
     font-weight: 400;
     max-width: 500px;
-
+    color: wheat;
 }
 
-.area_texto{
-    font-size: 15;
+.area_texto {
+    font-size: 15px;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 50px;
+    color: wheat;
 }
 
-.btn_area button{
-    margin-top: 15px;
-    border-radius: 12px;
-    background: none;
-    border: 1px solid blue;
-    cursor: pointer;
-    width: 100px;
-    
-
-    &:hover{
-        background-color: blue;
-        color: #ffff;
-    }
+.btn_area button {
+    margin-top: 100px;
 }
 
-.area_direita{
+.area_direita {
     margin-left: auto;
-    
-    height:auto;
-    width: 55%;
-    margin-right:35px;
-} 
-
-.area_serviços{
-color: black;
-margin-top: 150px;
-align-items: center;
-text-align: center;
-font-size: 25px;
+    margin-right: 35px;
+    margin-top: -450px;
 }
+
+.area_serviços {
+    color: white;
+    margin-top: 700px;
+    margin-left: 748px;
+    font-size: 25px;
+}
+
 
 
 .Remedios{
@@ -135,18 +91,23 @@ font-size: 25px;
 }
 
 .card_titulo span{
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
 }
 
 .card_texto p {
-    font-size: 14;
-    font-weight: 400;
+    font-size: 10;
+    font-weight: 200;
 }
 
 .card_img img{
-    width: 50px;
+    width: 50px; 
 }
+.card-img-top {
+    width: 50px; 
+    margin: auto; 
+}
+
 .Cadastro {
     display: flex;
     padding-top: 50px;
@@ -199,132 +160,92 @@ form button{
     }
 }
 
-.Palavras h1{
-    margin-right: 100px;
-    color: #ccc;
-    text-align: right;
-    margin-top: 100px;
+.Sobre {
+    padding: 100px 0;
 }
 
-.Palavras p{
-    margin-right: 100px;
-    color: #ccc;
-    text-align: right;
-    margin-top: 40px;
+.Palavras h1 {
+    color: #333;
+    margin-top: 0;
 }
 
-.Palavras button{
-    
-    float: right;
-    color: blue;
-    margin-top: 25px;
-    margin-right: 300px;
-    width: 100px;
+.Palavras p {
+    color: #666;
+}
+
+.Palavras button {
+    background-color: blue;
+    color: #fff;
+    border: none;
     border-radius: 12px;
     cursor: pointer;
-    height: 35px;
-    border: 1px solid blue;
-    background: none;
-
-    &:hover{
-        background-color: blue;
-        color: #ffff;
-    }
-}
-div img{
-    margin-top: -200px;
 }
 
-.footer_titulo{
-    display: flex;
-    padding-top: 50px;
-	width: 100%;
+.Palavras button:hover {
+    background-color: #0d6efd;
+}
+
+.Image_Esquerda img {
+    max-width: 100%;
+}
+
+
+
+
+
+.Quem_Somos {
     background-color: #96aef7;
-    height: 350px;
-    color: #fff;
+    padding: 50px 0;
     
 }
 
-.footer_titulo h1{
-    font-size: 20px;
-    margin-left: 100px;
-}
-
-.footer_texto{
-    color: white;
-    margin-top: -270px;
-    margin-left: 100px;
-
-}
-
-.texto_company{
-    display: flex;
-    padding-top: 150px;
-    justify-content: center;
-    margin-top: -157px;
-    margin-left: 75px;
-
-}
-
-.footer_company h1{
-    font-size: 15px;
-    margin-left: 900px;
-    color: green;
-    
-}
-
-.footer_Region{
-    display: flex;
-    margin-top: -130px;
-    color: orangered;
-    margin-left: 800px;
-
-
-}
-
-.footer_Region h1{
-    font-size: 15px;
-    
+.footer_titulo,
+.footer_company,
+.footer_Region,
+.footer_Help {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 50px; /* Ajusta a margem superior */
     
     
 }
 
-.footer_Help{
-    display: flex;
-    margin-top: -142px;
-    color: #fff;
-    margin-left: 1000px;
+.footer_titulo h1 {
+    font-size: 30px; /* Aumenta o tamanho da fonte */
 }
 
-.footer_Help h1{
-    font-size: 15px;
+.footer_company h1,
+.footer_Region h1,
+.footer_Help h1 {
+    font-size: 20px; /* Aumenta o tamanho da fonte */
 }
 
-.texto_company p{
-   text-align: center;
-   margin-right: 100px;
-   margin-top: 15px;
-   font-size: 15px;
-   color: #fff;
-
+.footer_texto,
+.texto_company,
+.texto_Region,
+.texto_help {
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Define a cor do texto */
 }
 
-.texto_Region p{
-    display: flex;
-    margin-top: 20px;
-    color: #fff;
-    margin-left: 800px;
-
-
-}
-
+.texto_company p,
+.texto_Region p,
 .texto_help p {
-    display: flex;
-    margin-top: 20px;
-    color: #fff;
-    margin-left: 1000px;
-
+    font-size: 15px;
+    margin-top: 10px; /* Ajusta a margem superior */
 }
+
+.footer_links {
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    margin-top: 30px; /* Ajusta a margem superior */
+}
+
+.footer_links a {
+    margin: 0 10px; /* Adiciona espaçamento entre os links */
+    color: #fff;
+    text-decoration: none;
+}
+
 
     
 
@@ -339,6 +260,11 @@ div img{
 
 
   
+
+
+
+
+
 
 
 
