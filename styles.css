@@ -246,35 +246,37 @@ div img{
 }
 
 .footer_titulo h1{
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 100px;
 }
 
 .footer_texto{
-    color: #fff;
+    color: white;
     margin-top: -270px;
     margin-left: 100px;
 
 }
 
-.footer_company{
+.texto_company{
     display: flex;
-    padding-top: 50px;
+    padding-top: 150px;
     justify-content: center;
     margin-top: -157px;
-    color: #fff;
+    margin-left: 75px;
 
 }
 
 .footer_company h1{
     font-size: 15px;
-    margin-right: 100px;
+    margin-left: 900px;
+    color: green;
+    
 }
 
 .footer_Region{
     display: flex;
     margin-top: -130px;
-    color: #fff;
+    color: orangered;
     margin-left: 800px;
 
 
@@ -282,6 +284,8 @@ div img{
 
 .footer_Region h1{
     font-size: 15px;
+    
+    
     
 }
 
