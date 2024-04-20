@@ -21,22 +21,17 @@ $stmt->execute();
 $stmt->store_result();
 $stmt->close();
 
-//if($stmt->rowCount() > 0){
-    header("location:./index.html");
-//}
-//else{
-    //echo"Erro ao tentar adicionar usuario";
-//}
 
-//}
+    header("location:./index.html");
+
 ?>
 
 <?php
-// Aqui está o seu código existente para processar o formulário e inserir os dados no banco de dados
 
-// Após inserir os dados com sucesso, você pode redirecionar o usuário para a página inicial ou qualquer outra página
+
+
 header("Location: listarConsultas.php")
-  // Certifique-se de sair após o redirecionamento
+  
 ?>;
 
 
