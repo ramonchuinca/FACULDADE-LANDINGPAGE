@@ -195,34 +195,6 @@
                             
                             <button type="submit" id="submit-btn">ENVIAR</button>
                         </form>
-                              
-
-                        <?php
-                        // Processar o formulário de agendamento...
-                    
-                        // Verificar se o formulário foi submetido
-                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                            // Verificar se os campos do formulário foram preenchidos
-                            if(isset($_POST['nome']) && isset($_POST['cpf']) && isset($_POST['email']) && isset($_POST['telefone']) && isset($_POST['data']) && isset($_POST['endereco'])) {
-                                // Processar o formulário...
-                    
-                                // Enviar email de confirmação
-                                $to = $_POST['email'];
-                                $subject = "Confirmação de Agendamento";
-                                $message = "Olá {$_POST['nome']},\n\nSeu agendamento foi confirmado com sucesso.\nDetalhes do agendamento:\nData: {$_POST['data']}\nEndereço: {$_POST['endereco']}";
-                                $headers = "From: seu_email@seudominio.com";
-                    
-                                mail($to, $subject, $message, $headers);
-                    
-                                // Exibir mensagem de confirmação
-                                echo "<p>O agendamento foi concluído com sucesso!</p>";
-                            } else {
-                                echo "<p>Preencha todos os campos do formulário.</p>";
-                            }
-                        }
-                        ?>
-
-                        
                         <script>
                            
                             document.getElementById("submit-btn").addEventListener("click", function(event) {
