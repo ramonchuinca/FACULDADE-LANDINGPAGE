@@ -30,8 +30,14 @@ $stmt->close();
 
 
 
-header("Location: listarConsultas.php")
+header("location:listarConsultas.php")
   
 ?>;
+
+
+
+
+
+
 
 
