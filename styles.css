@@ -143,7 +143,8 @@ p {
 }
 .custom-card:hover,
 .custom-card.hovered {
-  transform:scale(1.2)
+  transform:scale(1.2);
+  transform:translateY(-5px);
 }
 .custom-card.hovered
 
