@@ -1,14 +1,14 @@
-document.addEventListener('DOMContentLoaded', function () {
-    let elemento = document.getElementById('Remedios');
+// document.addEventListener('DOMContentLoaded', function () {
+//     let elemento = document.getElementById('Remedios');
 
-    elemento.addEventListener('mouseenter', function () {
-        this.classList.add('hovered');
-    });
+//     elemento.addEventListener('mouseenter', function () {
+//         this.classList.add('hovered');
+//     });
 
-    elemento.addEventListener('mouseleave', function () {
-        this.classList.remove('hovered');
-    });
-});
+//     elemento.addEventListener('mouseleave', function () {
+//         this.classList.remove('hovered');
+//     });
+// });
 
 // document.addEventListener('DOMContentLoaded', function () {
 //     let elemento = document.getElementById('Remedios');
