@@ -77,28 +77,29 @@ svg {
 } */
 
 .trafalgar {
-  padding-top: 80px;
+  padding-top:15%;
   text-transform: uppercase;
   color: #fff;
   object-fit: cover;
   /* width: 100%; */
 }
 
-.area_titulo {
+/* .area_titulo {
   font-size: 1.8em;
+  color: #fff;
+  /* text-transform: uppercase; */
   /* font-weight: 400;
-  max-width: 500px; */
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.area_texto {
+  max-width: 500px; 
+} 
+*/
+  
+/* .area_texto {
   font-size: 1.8em;
-  /* font-weight: 400; */
   margin-top: 10%;
-  color: #fff;
+  color: #862020;
   text-transform: uppercase;
-}
+  /* font-weight: 400; 
+} */
 
 .btn_area button {
   margin-top: 85px;
@@ -115,42 +116,46 @@ svg {
   color: white;
   font-size: 1.8em;
   text-transform: uppercase;
-  padding-left: 70%;
+  padding-left: 57%;
   /* padding: -30px; */
 }
 p {
   margin-bottom: inherit !important;
 }
 
+
 .Remedios {
+  cursor: pointer;
+  padding: 80px 0px;
+  grid-template-columns: 1fr ; /* ou outra configuração de colunas */
+  /* column-gap: 20px; */
+  /* display: grid; */
+  /* margin-left: -10px; */
   /* margin-top: 50px; */
   /* display: flex;
   flex-direction: row;
   align-items: center; */
   /* height: 600px; */
-  cursor: pointer;
-  padding: 80px 0px;
-  column-gap: 20px;
 }
 .card_remedio {
   display: flex;
-  /* width: 100%;
-  height: 100%; */
   flex-direction: row;
   justify-content: center;
   position: absolute;
+  /* width: 100%;
+  height: 100%; */
 }
 .card {
-  /* margin-top: 20px; */
-  width: 200px;
-  height: 200px;
   background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
+  padding:20px;
+  border-radius:12px;
   box-shadow: 5px 6px 4px 0px #ca0a0a;
-  /* margin-right: 20px; */
   display: flex;
   flex-direction: row;
+  /* margin-top: 20px; */
+  /* width: 200px;
+  height: 200px; */
+  /* margin-right: 20px; */
 }
 
 .card_titulo span {
@@ -320,11 +325,13 @@ form button {
     height: auto;
     margin-top: 61%;
   }
+  
 
   @media (max-width: 640px) {
     input {
       width: 178px;
     }
+   
   }
 
   .navbar-nav .nav-link {
@@ -351,6 +358,15 @@ form button {
     /* float: left; */
     margin-left: 100%;
   }
+}
+
+
+@media (max-width: 800px) {
+  .mobile-image {
+      display: block;
+  }
+ 
+
 }
 
 @media (max-width: 936px) {
@@ -400,5 +416,12 @@ form button {
   .area_serviços{
     padding-left: 1%;
     margin-top: 3%;
+  }
+
+}
+
+@media (max-width: 414px) {
+  .mobile-image {
+      display: block;
   }
 }
