@@ -141,12 +141,11 @@ p {
   /* margin-right: 20px; */
   transition:transform 0.3s ease-out;
 }
-.custom-card:hover {
+.custom-card:hover,
+.custom-card.hovered {
   transform:scale(1.2)
 }
-.custom-card.hovered{
-  transition:transform 0.3s ease-out;
-}
+.custom-card.hovered
 
 .card_titulo span {
   font-size: 10px;
