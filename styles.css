@@ -116,6 +116,7 @@ p {
   flex-direction: row;
   align-items: center; */
   /* height: 600px; */
+    
 }
 .card_remedio {
   display: flex;
@@ -124,6 +125,8 @@ p {
   position: absolute;
   /* width: 100%;
   height: 100%; */
+  cursor: pointer;
+  
 }
 .card {
   background-color: #fff;
@@ -136,6 +139,11 @@ p {
   /* width: 200px;
   height: 200px; */
   /* margin-right: 20px; */
+  transition:transform 0.3s ease-out;
+}
+.custom-card:hover {
+  transform:scale(1.2)
+  
 }
 
 .card_titulo span {
