@@ -297,6 +297,22 @@ form button {
   text-decoration: none;
 }
 
+/* ESTILIZAÇÃO DA TABELA */
+ /* Estilos simples para a tabela de confirmação */
+ table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: green;
+}
+
 /*  CSS @MEDIAS QUERY*/
 @media (max-width: 767px) {
   .container-fluid {
