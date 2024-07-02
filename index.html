@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles.css" />
@@ -66,6 +67,7 @@
     </div>
   </div>
   <!--SESSÃO DE CARDS 1-->
+
   <section class="Remedios" id="Remedios">
     <div class="container mt-5">
       <!-- Linha principal com 2 colunas -->
@@ -150,13 +152,11 @@
       <!-- Fim da linha principal -->
     </div>
   </section>
-  
-  
   <!--FIM SESSÃO DE CARDS 2-->
 
   <!--SESSÃO CADASTRO-->
   <section class="Cadastro" id="Cadastro">
-    <form action="processarFormulario.php" method="POST" onsubmit="return validarForm()">
+    <form id="formulario"> 
       <div class="input_div">
         <div class="input_control">
           <label for="nome">Nome</label>
@@ -179,8 +179,8 @@
       </div>
       <div class="input_div">
         <div class="input_control">
-          <label for="data">Data</label>
-          <input type="date" id="data" name="data" title="dat">
+          <label for="dia">Data</label>
+          <input type="date" id="dia" name="dia" title="dat">
         </div>
         <div class="input_control">
           <label for="endereco">Endereço</label>
@@ -195,32 +195,6 @@
 
         <button type="submit" id="submit-btn">ENVIAR</button>
       </form>
-      <script>
-        function validarForm() {
-          // Obter os valores dos campos do formulário
-          var nome = document.getElementById("nome").value;
-          var cpf = document.getElementById("cpf").value;
-          var email = document.getElementById("email").value;
-          var telefone = document.getElementById("telefone").value;
-          var data = document.getElementById("data").value;
-          var endereco = document.getElementById("endereco").value;
-          if (nome === "" || cpf === "" || email === "" || telefone === "" || data === "" || endereco === "") {
-            alert("Por favor, preencha todos os campos.");
-            return false;
-          }
-          return true;
-        }
-
-        // Adiciona um ouvinte de evento para o clique do botão de envio
-        document.getElementById("submit-btn").addEventListener("click", function (event) {
-          event.preventDefault(); // Impede o envio padrão do formulário
-          if (validarForm()) { // Se a validação for bem-sucedida, exibe um alerta e envia o formulário
-            alert("Consulta agendada com sucesso!");
-            document.querySelector("form").submit();
-          }
-        });
-  
-      </script>
     </form>
     </div>
     </form>
@@ -296,56 +270,7 @@
   </footer>
   </div>
   </div>
-  <!-- <script src="./formulario.js"></script> -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-    let phoneInput = document.getElementById('telefone');
-
-    phoneInput.addEventListener('input', function (event) {
-        let input = event.target.value.replace(/\D/g, '');
-        let formattedInput = '';
-
-        if (input.length > 0) {
-            formattedInput = '(' + input.substring(0, 2);
-        }
-        if (input.length >= 3) {
-            formattedInput += ') ' + input.substring(2, 7);
-        }
-        if (input.length >= 8) {
-            formattedInput += '-' + input.substring(7, 11);
-        }
-        
-        event.target.value = formattedInput;
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    let cpfInput = document.getElementById('cpf');
-
-    cpfInput.addEventListener('input', function (event) {
-        let input = event.target.value.replace(/\D/g, ''); // Remove tudo que não é dígito
-        let formattedInput = '';
-
-        if (input.length > 0) {
-            formattedInput = input.substring(0, 3); // Primeiros 3 dígitos do CPF
-
-            if (input.length > 3) {
-                formattedInput += '.' + input.substring(3, 6); // Adiciona o primeiro bloco de 3 dígitos
-            }
-            if (input.length > 6) {
-                formattedInput += '.' + input.substring(6, 9); // Adiciona o segundo bloco de 3 dígitos
-            }
-            if (input.length > 9) {
-                formattedInput += '-' + input.substring(9, 11); // Adiciona os últimos 2 dígitos
-            }
-        }
-
-        event.target.value = formattedInput;
-    });
-});
-
-  </script>
-
+  <script src="./formulario.js"></script>
 </body>
 
 </html>
