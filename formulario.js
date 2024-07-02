@@ -68,6 +68,8 @@ async function handleSubmit(data){
             body:JSON.stringify(data)
         })
         console.log ("deu certo",res.json())
+        // window.location.href = "./receber-dados.html"
+        window.open("./receber-dados.html",'_blank')
     } catch (error) {
         console.log(error)
     }
@@ -96,7 +98,7 @@ function validarForm() {
     };
   }
 
-  // Adiciona um ouvinte de evento para o clique do botão de envio
+  //Adiciona um ouvinte de evento para o clique do botão de envio
 //   document.getElementById("submit-btn").addEventListener("click", function (event) {
 //     event.preventDefault(); 
 //     if (validarForm()) { 

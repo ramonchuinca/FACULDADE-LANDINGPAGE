@@ -31,6 +31,7 @@
             <li class="nav-item"><a class="nav-link link-menu" href="#Cadastro">Cadastro</a></li>
             <li class="nav-item"><a class="nav-link link-menu" href="#Sobre">Sobre</a></li>
             <li class="nav-item"><a class="nav-link link-menu" href="#Quem Somos">Quem Somos</a></li>
+            <li class="nav-item"><a class="nav-link link-menu" href="receber-dados.html">Receber Dados</a></li>
           </ul>
         </div>
       </div>
@@ -271,6 +272,71 @@
   </div>
   </div>
   <script src="./formulario.js"></script>
+
+  <!-- <script>
+    document.getElementById('submit-btn').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevenir o envio padrão do formulário
+
+        // Capturar os valores dos campos do formulário
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const telefone = document.getElementById('telefone').value;
+        const endereco = document.getElementById('endereco').value;
+        const dia = document.getElementById('dia').value;
+        const cpf = document.getElementById('cpf').value;
+
+
+        // Redirecionar para a página recebe_dados.html com os parâmetros na URL
+        const url = 'receber-dados.html' +
+            '?nome=' + encodeURIComponent(nome) +
+            '&email=' + encodeURIComponent(email) +
+            '&telefone=' + encodeURIComponent(telefone) +
+            '&endereco=' + encodeURIComponent(endereco) +
+            '&dia=' + encodeURIComponent(dia) +
+            '&cpf=' + encodeURIComponent(cpf) +
+            
+           
+        
+        // Redirecionar para a página recebe_dados.html
+        window.location.href = 
+        '?nome=' + encodeURIComponent(nome) +
+            '&email=' + encodeURIComponent(email) +
+            '&telefone=' + encodeURIComponent(telefone) +
+            '&endereco=' + encodeURIComponent(endereco) +
+            '&dia=' + encodeURIComponent(dia) +
+            '&cpf=' + encodeURIComponent(cpf) +
+            '&mensagem=' + encodeURIComponent(mensagem);
+
+            console.log(url)
+    });
+</script> -->
+
+<script>
+  // Event listener para capturar o envio do formulário
+  document.getElementById('formulario').addEventListener('submit', function(event) {
+      // Impede o envio padrão do formulário para que possamos processá-lo via JavaScript
+      event.preventDefault();
+
+      // Construir um objeto FormData com os dados do formulário
+      var formData = new FormData(this);
+
+      // Enviar os dados do formulário para receber-dados.php usando AJAX
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'receber-dados.php', true);
+      xhr.onload = function() {
+          if (xhr.status === 200) {
+              console.log(xhr.responseText); // Exibe a resposta do servidor (opcional)
+              // Redireciona para a página de confirmação ou faça algo com a resposta, se necessário
+              window.location.href = 'receber-dados.html';
+          }
+      };
+      xhr.onerror = function() {
+          console.error('Erro ao enviar requisição.');
+      };
+      xhr.send(formData);
+  });
+</script>
+
 </body>
 
 </html>
