@@ -6,16 +6,16 @@
 
 // // Função para preencher a tabela com os dados recebidos
 // function preencherTabela() {
-    const tabela = document.getElementById('receber-dados');
-    const loading = document.querySelector('.loading')
-//     const dados = {
-//         nome: obterParametroUrl('nome'),
-//         email: obterParametroUrl('email'),
-//         telefone: obterParametroUrl('telefone'),
-//         endereco: obterParametroUrl('endereco'),
-//         dia: obterParametroUrl('dia'),
-//         cpf: obterParametroUrl('cpf'),
-       
+    //     const dados = {
+        //         nome: obterParametroUrl('nome'),
+        //         email: obterParametroUrl('email'),
+        //         telefone: obterParametroUrl('telefone'),
+        //         endereco: obterParametroUrl('endereco'),
+        //         dia: obterParametroUrl('dia'),
+        //         cpf: obterParametroUrl('cpf'),
+        const tabela = document.getElementById('receber-dados');
+        const loading = document.querySelector('.loading')
+        
 //     };
 
     // Iterar sobre os dados e criar as linhas da tabela
@@ -39,11 +39,24 @@
                 <td>${chave.dia}</td>
                 <td>${chave.endereco}</td>
                 <td>${chave?.cpf}</td>
+                <td><button class="btn-delete">Deletar</button></td>
                 </tr>`;
                 tabela.innerHTML += linha;
+                
             }); 
             loading.classList.add('hide')
             tabela.classList.remove('hide')
+
+                   
+
+             // Adicionar event listeners para os botões de deletar
+        const btnDeletar = document.querySelectorAll('.btn-delete');
+        btnDeletar.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const row = this.closest('tr'); // Encontra a linha pai do botão clicado
+                row.remove(); // Remove a linha da tabela
+            });
+        });
         } catch (error) {
             
         }

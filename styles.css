@@ -299,19 +299,58 @@ form button {
 
 /* ESTILIZAÇÃO DA TABELA */
  /* Estilos simples para a tabela de confirmação */
+ h2{
+  text-align: center;
+ }
+ p{
+  text-align: center;
+ }
+ .btn-delete {
+  color: #029797;
+ }
  table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  font-family: Arial, sans-serif; /* Define uma fonte para todo o conteúdo da tabela */
+  color:#000;
 }
-th, td {
-  border: 1px solid #ccc;
+
+table th, table td {
+  border: 1px solid #333;
   padding: 10px;
-  text-align: left;
+  text-align: center;
 }
-th {
-  background-color: green;
+
+table th {
+  background-color:blue;
+  color:#fff; /* Cor do texto nos cabeçalhos */
 }
+
+/* Define um estilo alternado para as linhas da tabela */
+table tr:nth-child(even) {
+  background-color: #948c8c; /* Cor de fundo para linhas pares */
+}
+
+/* Estilo para a primeira coluna (opcional) */
+.table td:first-child {
+  font-weight: bold; /* Exemplo de formatação para a primeira coluna */
+}
+.btn-voltar {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-voltar:hover {
+  background-color: #0056b3;
+}
+
 
 /*  CSS @MEDIAS QUERY*/
 @media (max-width: 767px) {

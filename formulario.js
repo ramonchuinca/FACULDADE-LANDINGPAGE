@@ -25,8 +25,8 @@ async function handleSubmit(data){
             body:JSON.stringify(data)
         })
         console.log ("deu certo",res.json())
-        // window.location.href = "./receber-dados.html"
-        window.open("./receber-dados.html",'_blank')
+        window.location.href = "./receber-dados.html"
+        // window.open("./receber-dados.html")
     } catch (error) {
         console.log(error)
     }
